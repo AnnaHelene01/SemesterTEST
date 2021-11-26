@@ -1,3 +1,8 @@
+/*SETTE FONTER */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*Sette bakgrunnsfarge for head og footer*/
 header, footer {
     background-color: black;
@@ -9,9 +14,15 @@ header, footer {
     font-family: 'Monoton', cursive;
 }
 
+.logotext {
+    display: grid;
+    padding: 0px;
+}
+
 /* Meny */
 header {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
@@ -23,10 +34,10 @@ nav {
     margin-left: 25px;
     display: none;
     position: fixed;
-    top: 0px;
+    top: 90px;
     background: black;
     z-index: 1000;
-    right: 0px;
+    right: 8px;
 }
 
 nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer brukervennlighet*/
@@ -41,6 +52,8 @@ a {
 /* Hamburger meny for mobil versjon*/
 #hamburger-menu {
     display: none;
+    margin: 10px;
+
 }
 
 #hamburger-menu:checked ~ nav {
@@ -63,7 +76,27 @@ nav li {
 
 header a {
     color: #FFF;
-    padding: 10px;   /*Mellomrom meny: Padding istedenfor margin fordi nå blir mer området "klikkbart" (mer brukervennlig) */
+    padding: 20px;   /*Mellomrom meny: Padding istedenfor margin fordi nå blir mer området "klikkbart" (mer brukervennlig) */
+}
+
+
+/* IMAGE ØVERST MED SENTRERT TEKST*/
+.front-image {
+    background-image: url('/semesterimages/scientific-2040795_1280.jpg');
+    background-size: cover;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 70vh;
+}
+
+.front-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
 }
 
 
