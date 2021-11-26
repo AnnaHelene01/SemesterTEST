@@ -1,0 +1,87 @@
+/*Sette bakgrunnsfarge for head og footer*/
+header, footer {
+    background-color: black;
+    color: #FFF;
+}
+
+/* LOGO*/
+.logo {
+    font-family: 'Monoton', cursive;
+}
+
+/* Meny */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 0px;
+    background: black;
+    z-index: 1000;
+    right: 0px;
+}
+
+nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer brukervennlighet*/
+    background-color: #52DB4D;
+}
+
+/* Fjerne underline på alle linker*/
+a {
+    text-decoration: none;
+}
+
+/* Hamburger meny for mobil versjon*/
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: block;
+    padding: 20px 30px;
+}
+
+/* Sette underline på aktiv side*/
+.action {
+    text-decoration: underline;
+}
+
+header a {
+    color: #FFF;
+    padding: 10px;   /*Mellomrom meny: Padding istedenfor margin fordi nå blir mer området "klikkbart" (mer brukervennlig) */
+}
+
+
+@media (min-width: 1041px) {
+    /* Gjøre meny responsiv*/
+   header {
+       justify-content: start;
+   }
+
+   nav {
+       display: block;
+       position: static;
+   }
+
+   nav li {
+       display: inline-block;
+       padding: 0px;
+   }
+
+   header label {
+       display: none;
+   }
+}
