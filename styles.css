@@ -3,6 +3,11 @@ h1, h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
 /*Sette bakgrunnsfarge for head og footer*/
 header, footer {
     background-color: black;
@@ -99,6 +104,61 @@ header a {
     color: #FFF;
 }
 
+/* FOOTER :*/
+footer {
+    background-color: black;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+}
+
+.museum-footer { /* Flytte all info og content til center*/
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-contact { /* Få ikon og tekst ved siden av hverandre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-envelope, .fa-phone-alt {
+    font-size: 18px;
+}
+
+.footer-app {
+    font-size: 30px;
+}
+
+.email-align {
+    display: flex;
+}
+
+#email-footer {
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* CTA-ene i footer:*/
+.cta-footer {
+    background-color: #52DB4D;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px; 
+    grid-row: 2;
+    min-width: 50px;
+    margin-top: 0px;
+}
+
+
+.cta-footer:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
 
 @media (min-width: 1041px) {
     /* Gjøre meny responsiv*/
@@ -118,5 +178,16 @@ header a {
 
    header label {
        display: none;
+   }
+
+   /* Gjøre footer responsiv: */
+   footer {
+       display: grid;
+       grid-template-rows: auto;
+   }
+
+   .museum-footer {
+       display: grid;
+       grid-template-columns: 333.33px 333.33px 333.33px;
    }
 }
