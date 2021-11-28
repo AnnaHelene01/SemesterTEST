@@ -84,7 +84,7 @@ header a {
     padding: 20px;   /*Mellomrom meny: Padding istedenfor margin fordi nå blir mer området "klikkbart" (mer brukervennlig) */
 }
 
-
+/* MAIN CONTENT PÅ SIDEN*/
 /* IMAGE ØVERST MED SENTRERT TEKST*/
 .front-image {
     background-image: url('/semesterimages/scientific-2040795_1280.jpg');
@@ -102,6 +102,14 @@ header a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bodytext {
+    text-align: center;
 }
 
 /* FOOTER :*/
@@ -189,5 +197,10 @@ footer {
    .museum-footer {
        display: grid;
        grid-template-columns: 333.33px 333.33px 333.33px;
+   }
+
+   /* MAIN CONTENT responsiv*/
+   .bodytext {
+       max-width: 968px;
    }
 }
