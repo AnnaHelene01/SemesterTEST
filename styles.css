@@ -108,12 +108,69 @@ h1 {
     text-align: center;
 }
 
-.bodytext {
+.bodytext{
     text-align: center;
+}
+
+/*EXPLORE seksjon */
+.content-header {
+    text-align: center;
+}
+
+.explore-section,
+.exhibition-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.explore-part,
+.exhibition-part {
+    flex: 100%;
+    max-width: 400px;
+    margin: 30px;
 }
 
 .img {
     height: 300px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.visit-header {
+    text-align: center;
+}
+
+.visit {
+    text-align: center;
+}
+
+.img-visit {
+    height: 350px;
+    width: 400px;
+    object-fit: cover
+}
+
+/* Cta som ligger under hver seksjon */
+.cta-main {
+    float: right;
+    margin-right: 200px;
+    background-color: #52DB4D;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px; 
+    grid-row: 2;
+    min-width: 50px;
+}
+
+.cta-main:hover {
+    background-color: black;
+    color: #52DB4D;
 }
 
 /* FOOTER :*/
@@ -172,6 +229,22 @@ footer {
     background-color: rgba(255, 255, 255, .3)
 }
 
+@media (min-width: 600px) {
+    .img-visit {
+        height: 350px;
+        width: 600px;
+        object-fit: cover
+    }
+}
+
+@media (min-width: 900px) {
+   .img-visit {
+       height: 350px;
+       width: 900px;
+       object-fit: cover
+    }
+}
+
 @media (min-width: 1041px) {
     /* Gjøre meny responsiv*/
    header {
@@ -206,5 +279,10 @@ footer {
    /* MAIN CONTENT responsiv*/
    .bodytext {
        max-width: 968px;
+   }
+   
+   .explore-part {
+    flex: 33.33%;
+    max-width: 400px;
    }
 }
