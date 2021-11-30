@@ -1,0 +1,30 @@
+/* MAIN CONTENT PÅ SIDEN*/
+/* IMAGE ØVERST MED SENTRERT TEKST*/
+.front-image-explore {
+    background-image: url('/semesterimages/billetto-editorial-334686.jpg');
+    background-size: cover;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 70vh;
+}
+
+.front-text-explore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* IMAGES FRA MUSEUM */
+.museum-images {
+    text-align: center;
+    margin: 10px;
+}
+
