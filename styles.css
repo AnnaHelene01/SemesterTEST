@@ -14,14 +14,20 @@ header, footer {
     color: #FFF;
 }
 
+/* MAIN*/
+body {
+    background-color: #f3f2f4;
+}
+
 /* LOGO*/
 .logo {
     font-family: 'Monoton', cursive;
+    font-size: 1.4rem;
 }
 
 .logotext {
     display: grid;
-    padding: 0px;
+    padding: 20px;
 }
 
 /* Meny */
@@ -43,6 +49,10 @@ nav {
     background: black;
     z-index: 1000;
     right: 8px;
+}
+
+nav a {
+    padding: 20px;
 }
 
 nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer brukervennlighet*/
@@ -81,7 +91,6 @@ nav li {
 
 header a {
     color: #FFF;
-    padding: 20px;   /*Mellomrom meny: Padding istedenfor margin fordi nå blir mer området "klikkbart" (mer brukervennlig) */
 }
 
 /* MAIN CONTENT PÅ SIDEN*/
@@ -89,7 +98,7 @@ header a {
 .front-image {
     background-image: url('/semesterimages/scientific-2040795_1280.jpg');
     background-size: cover;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
@@ -101,7 +110,9 @@ header a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 30px;
     color: #FFF;
+    background-color: rgba(255, 255, 255, .3)
 }
 
 h1 {
@@ -109,29 +120,30 @@ h1 {
 }
 
 .bodytext{
+    margin: auto;
+    padding: 10px;
     max-width: 968px;
-    text-align: center;
 }
 
 /*Explore, exhibition og visit seksjon */
 .content-header {
     text-align: center;
+    clear:both;
 }
 
-.explore-section,
-.exhibition-section {
+.flexbox-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
     justify-content: center;
 }
 
 .explore-part,
-.exhibition-part {
+.exhibition-part,
+.getinvolved-part {
     flex: 100%;
-    max-width: 400px;
+    min-width: 400px;
     margin: 30px;
+    background-color: #FFF;
 }
 
 .img {
@@ -141,7 +153,7 @@ h1 {
 }
 
 .visit {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -271,7 +283,8 @@ footer {
    }
 
    /* MAIN CONTENT responsiv*/
-   .explore-part { /* flexe bildene og sette maks bredde*/
+   .explore-part,
+   .getinvolved-part { /* flexe bildene og sette maks bredde*/
     flex: 33.33%;
     max-width: 400px;
    }
@@ -285,5 +298,9 @@ footer {
     .museum-footer {
         display: grid;
         grid-template-columns: 333.33px 333.33px 333.33px;
+    }
+
+    .footer-newsletter {
+        display: flex;
     }
 }

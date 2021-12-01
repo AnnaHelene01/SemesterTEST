@@ -1,0 +1,20 @@
+/* MAIN CONTENT PÅ SIDEN*/
+/* IMAGE ØVERST MED SENTRERT TEKST*/
+.front-image-events {
+    background-image: url('/semesterimages/library-1132573_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 70vh;
+}
+
+.front-text-events {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .3);
+}
