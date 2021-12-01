@@ -22,3 +22,10 @@
 h2 {
     text-align: center;
 }
+
+.getinvolved-part {
+    flex: 100%;
+    min-width: 400px;
+    margin: 30px;
+    background-color: #FFF;
+}

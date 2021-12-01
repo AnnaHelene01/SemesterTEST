@@ -115,7 +115,7 @@ header a {
     background-color: rgba(255, 255, 255, .3)
 }
 
-h1 {
+h1, h3 {
     text-align: center;
 }
 
@@ -138,10 +138,9 @@ h1 {
 }
 
 .explore-part,
-.exhibition-part,
-.getinvolved-part {
+.exhibition-part {
     flex: 100%;
-    min-width: 400px;
+    max-width: 400px;
     margin: 30px;
     background-color: #FFF;
 }

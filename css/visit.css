@@ -1,9 +1,9 @@
 /* MAIN CONTENT PÅ SIDEN*/
 /* IMAGE ØVERST MED SENTRERT TEKST*/
-body {
+/* body {
     max-width: 1280px;
     margin: 0 auto;
-}
+} */
 
 .front-image-visit {
     background-image: url('/semesterimages/Untitled.jpg');
@@ -22,4 +22,17 @@ body {
     color: #FFF;
     padding: 30px;
     background-color: rgba(255, 255, 255, .3);
+}
+
+/* KART*/
+.map_container iframe {
+    height: 300px;
+  }
+
+  @media (min-width: 1041px) {
+  .map_container iframe {
+    width: 80%;
+    height: 400px;
+    margin-bottom: 24px;
+  }
 }
