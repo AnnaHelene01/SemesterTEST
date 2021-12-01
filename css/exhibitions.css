@@ -29,10 +29,21 @@
     object-fit: cover;
 }
 
-.ex-text {
+h2 {
     text-align: center;
 }
 
 @media screen and (min-width: 1041px) {
+   .ex-img {
+       width: 820px;
+   }
 
+    p {
+       max-width:800px;
+   }
+
+    .ex {
+       display: flex;
+       flex: 50%;
+   }
 }
