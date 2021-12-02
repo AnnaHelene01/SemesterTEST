@@ -24,15 +24,39 @@
     background-color: rgba(255, 255, 255, .3);
 }
 
-/* KART*/
+/* KART maks høyde*/
 .map_container iframe {
     height: 300px;
   }
 
-  @media (min-width: 1041px) {
-  .map_container iframe {
-    width: 80%;
-    height: 400px;
-    margin-bottom: 24px;
+/* TEKST INNHOLD*/
+h2 {
+    text-align: center;
+}
+
+/* Flytte alt innhold til senter*/
+.visit-section {
+    display: grid;
+    justify-content: center;
+}
+
+/* Sette en maks bredde på selve teksten*/
+.visit-text {
+    max-width: 400px;
+}
+
+/* Sentrere åpningstidene */
+.hours {
+    text-align: center;
+}
+
+
+  @media (min-width: 900px) {
+  /* Tekst innhold responsivt:*/
+
+  .visit-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
   }
 }
