@@ -31,11 +31,20 @@ h2 {
 }
 
 /*SKJEMA*/
+/*Sette maks bredde, aligne senter og sette font */
 form {
     max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-input,
+/* Gjøre input-ene litt høyere*/
+#name, #email {
+    height: 2.5em;
+}
+
+/* Ordne tekstboks*/
 select,
 textarea {
     border: 1px solid #c4c4c4;
@@ -51,7 +60,7 @@ textarea {
 }
 
 textarea {
-    height: 60.4%;
+    height: 60%;
     min-height: 100px;
 }
 
@@ -61,6 +70,7 @@ textarea {
     text-align: center;
 }
 
+/* Plassere nedover*/
 .form-wrapper {
     display: flex;
     text-align: left;
