@@ -96,13 +96,13 @@ header a {
 /* MAIN CONTENT PÅ SIDEN*/
 /* IMAGE ØVERST MED SENTRERT TEKST*/
 .front-image {
-    background-image: url('/semesterimages/bakgrunntest.jpg');
+    background-image: url('/semesterimages/scientific-2040795_1280.jpg');
     background-size: cover;
     filter: brightness(50%);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    min-height: 50vh;
+    min-height: 30vh;
 }
 
 .front-text {
@@ -283,6 +283,16 @@ footer {
    }
 
    /* MAIN CONTENT responsiv*/
+   .front-image {
+    background-image: url('/semesterimages/bakgrunntest.jpg');
+    background-size: cover;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 50vh;
+}
+
    .explore-part,
    .getinvolved-part { /* flexe bildene og sette maks bredde*/
     flex: 33.33%;
