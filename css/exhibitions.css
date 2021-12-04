@@ -36,6 +36,11 @@ h2 {
     text-align: center;
 }
 
+.textbox {
+    padding: 10px;
+    max-width: 800px;
+}
+
 section > div {
     width: 100%;
 }

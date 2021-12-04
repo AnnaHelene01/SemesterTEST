@@ -112,7 +112,7 @@ header a {
     transform: translate(-50%, -50%);
     padding: 30px;
     color: #FFF;
-    background-color: rgba(255, 255, 255, .3)
+    background-color: rgba(255, 255, 255, .3);
 }
 
 h1, h3 {
