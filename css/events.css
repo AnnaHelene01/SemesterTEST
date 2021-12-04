@@ -3,10 +3,11 @@
 .front-image-events {
     background-image: url('/semesterimages/library-1132573_1920.jpg');
     background-size: cover;
+    filter: brightness(50%);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    min-height: 70vh;
+    min-height: 30vh;
 }
 
 .front-text-events {
@@ -22,4 +23,16 @@
 /* H3 headers*/
 h3 {
     text-align: center;
+}
+
+@media (min-width: 1041px) {
+    .front-image-events {
+        background-image: url('/semesterimages/library-desktop.jpg');
+        background-size: cover;
+        filter: brightness(50%);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        min-height: 50vh;
+    }
 }

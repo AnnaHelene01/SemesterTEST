@@ -7,10 +7,11 @@ body {
 .front-image-exhib {
     background-image: url('/semesterimages/mammoth-1257288_1920.jpg');
     background-size: cover;
+    filter: brightness(50%);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    min-height: 70vh;
+    min-height: 30vh;
 }
 
 .front-text-exhib {
@@ -24,8 +25,6 @@ body {
 }
 
 /* fikse selve layout*/
-
-
 /* bilder*/
 .ex-img {
     width: 100%;
@@ -42,7 +41,19 @@ section > div {
 }
 
 @media screen and (min-width: 1041px) {
+    
+
 /*Få layout "sikkksakk" med bilder og tekst */
+.front-image-exhib {
+    background-image: url('/semesterimages/mammoth-desktop.jpg');
+    background-size: cover;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 50vh;
+}
+
     .ex {
        display: flex;
        flex: 50%;
