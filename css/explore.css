@@ -12,12 +12,12 @@
 
 .front-text-explore {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px;
     color: #FFF;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: black;
 }
 
 h2 {
@@ -39,5 +39,9 @@ h2 {
     background-position-x: center;
     background-position-y: bottom;
     min-height: 50vh;
+}
+
+.front-text-explore {
+    top: 38%;
 }
 }
